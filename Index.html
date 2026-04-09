@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Barra que direciona as sessões da pagina-->
+    <nav id="menu">
+        <div class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <button id="theme-toggle">Modo Escuro</button>
+    </nav>
+<!--sessão "sobre mim"-->
+    <main>
+        <section id="sobre">
+            <h1>Sobre Mim</h1>
+            <p>Olá! Sou um estudante de Ciencia da computação focado em tecnologia, dados e pondo o pé em cyber segurança, minha linguagem principal é Python.</p>
+            <p><strong>Hobbies:</strong> Gosto muito de jogos (zelda tem um espaço especial), cultura geek e investimentos. 
+            <p>Veja meus trabalhos no <a href="https://github.com/PhauloHenriqueOliveira" target="_blank">GitHub</a> 
+                e entre em contato atraves do <a href="https://www.linkedin.com/in/paulo-henrique-oliveira126/" target="_blank">linkedin</a>.
+</p></p> 
+        </section>
+         <!--sessão "formação" com informações dos cursos feitos e em andamento -->
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Curso:</strong> Ciência da computação - UNINTER</li>
+                <li><strong>Curso:</strong> Analise e desenvolvimento de sistemas - SENAI</li>
+                <li><strong>Curso:</strong> Analise de dados - EBAC</li>
+                <li><strong>Idiomas:</strong> Inglês (Nível Intermediário)</li>
+                <li><strong>Interesses:</strong> Python, SQL, Cibersegurança e Análise/ciência de Dados.</li>
+            </ul>
+          
+        </section>
+         <!--sessão "portifólio contendo exemplos de projetos feitos" -->
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="portfolio-grid">
+                <div class="card">
+                    <h3>Analise de Dados Loggi</h3>
+                    <p>Programa principalmente em Python que utiliza dados reais para definir os parametros das áreas de entrega.</p>
+                </div>
+                <div class="card">
+                    <h3>Covid Dashboard</h3>
+                    <p>Projeto acadêmico focado em analisar as metricas durante a pandemia.</p>
+                </div>
+                 <div class="card">
+                    <h3>Atividade extensionista</h3>
+                    <p>Projeto acadêmico focado em criar um quizz de conscientização digital.</p>
+                </div>
+            </div>
+        </section>
+          <!--sessão "contato" onde simula o envio de um E-mail -->
+        <section id="contato">
+            <div class="container-contato">
+                <h2>Entre em Contato</h2>
+                <form id="form-contato">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" rows="5" placeholder="Como posso te ajudar?" required></textarea>
+                    </div>
+
+                    <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+                </form>
+
+                <div id="mensagem-sucesso" style="display:none; color: #2ecc71; margin-top: 15px; font-weight: bold;">
+                    ✔ Mensagem enviada com sucesso!
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Comprovação autoral, ou tentativa pelo menos-->
+    <footer>
+        <p>&copy; 2026 - Pagina autoral de paulo-henrique-oliveira RU: 5210033</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
